@@ -48,7 +48,7 @@ const Register = () => {
 
     }
     return (
-        <div className="min-w-screen min-h-screen my-10 rounded-xl bg-gray-100 flex items-center justify-center px-5 py-5">
+        <div className="min-w-screen min-h-screen my-10 rounded-xl bg-gray-100 flex items-center justify-center lg:px-5 py-5">
             <div className="bg-gray-100  text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style={{ maxWidth: '1000px' }}>
                 <div className="md:flex  w-full">
                     <div className="hidden md:block w-1/2 bg-indigo-500 py-10 px-10">
