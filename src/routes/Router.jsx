@@ -18,7 +18,6 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch("/products.json")
             },
             {
                 path: "/login",

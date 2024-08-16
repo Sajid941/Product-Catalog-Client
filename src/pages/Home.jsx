@@ -1,11 +1,19 @@
-import { useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Product from "../components/Product";
 import { Helmet } from "react-helmet";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosPublic from './../hooks/useAxiosPublic';
 
 
 const Home = () => {
-    const products = useLoaderData();
+    const axiosPublic = useAxiosPublic()
+    const {data: products = []} = useQuery({
+        queryKey: ["products"],
+        queryFn: async()=>{
+            const res = await axiosPublic.get('/products')
+            return res.data
+        }
+    })
     return (
         <div>
             <Helmet>
