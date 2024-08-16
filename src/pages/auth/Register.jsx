@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { IoIosLogIn } from "react-icons/io";
 import { BsPersonBoundingBox } from "react-icons/bs";
@@ -16,6 +16,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Register = () => {
     const {createUser}=useContext(AuthContext)
     const [showPassword,setShowPassword]=useState(false)
+    const navigate = useNavigate()
     const handleRegister = e =>{
         e.preventDefault()
         const form = new FormData(e.currentTarget)
@@ -40,6 +41,7 @@ const Register = () => {
             console.log(result.user)
             updateProfile(result.user,{displayName,photoURL})
             toast("Register Successfully")
+            navigate('/')
         })
         .catch(error => {
             console.log(error)

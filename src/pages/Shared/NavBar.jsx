@@ -11,7 +11,7 @@ const NavBar = () => {
             user &&
             <li><NavLink to={"/updateProfile"}>Update Profile</NavLink></li>
         }
-        <li><NavLink to={"/contactUs"}>Contact Us</NavLink></li>  
+        <li><NavLink to={"/contactUs"}>Contact Us</NavLink></li>
 
     </>
 
@@ -37,20 +37,32 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-3">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle ">
-                    <div className="w-12 rounded-full tooltip tooltip-bottom" data-tip={user && user.displayName}>
-                        {
-                            user ?
-                                <img className="rounded-full w-12 h-12" alt="Tailwind CSS Navbar component" src={user.photoURL ? user.photoURL : "https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png"} /> :
-                                <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png" />
-                        }
-                    </div>
-
-                </div>
                 {
                     user ?
-                        <button onClick={handleLogOut} className="btn">Sign Out</button> :
-                        <Link to={"/login"} className="btn">Login</Link>
+                        <div className="dropdown dropdown-end">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full border-2 border-black">
+                                    <img
+                                        alt="user photo"
+                                        src={user.photoURL} />
+                                </div>
+                            </div>
+                            <ul
+                                tabIndex={0}
+                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-3">
+                                <li>
+                                    <Link to="/updateProfile" className="justify-between">
+                                        Profile
+                                    </Link>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a onClick={handleLogOut}>Logout</a></li>
+                            </ul>
+                        </div> :
+                        <div className="flex gap-2">
+                            <Link to={"/login"} className="btn w-16">Login</Link>
+                            <Link to={"/register"} className="btn w-20">Sign Up</Link>
+                        </div>
                 }
             </div>
         </div>

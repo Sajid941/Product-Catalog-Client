@@ -10,7 +10,8 @@
       "image": "https://i5.walmartimages.com/seo/Like-New-Apple-iPhone-13-Pro-Max-A2484-128GB-Blue-US-Model-Factory-Unlocked-Cell-Phone_6ba1f90b-3b76-4e73-bb5c-8e353d988df0.de5842bcd17198be175ce2c6486b140c.jpeg",
       "review": "The iPhone 13 Pro has received rave reviews for its stunning camera quality, impressive performance, and sleek design.",
       "company_name": "Apple Inc.",
-      "tag": ["Smartphone", "iOS", "Flagship"]
+      "tag": ["Smartphone", "iOS", "Flagship"],
+      "date_added": "2024-08-1"
     },
     {
       "title": "Sony WH-1000XM4",
@@ -23,7 +24,8 @@
       "image": "https://www.digitaltrends.com/wp-content/uploads/2020/08/sony-wh-1000xm4-00003.jpg?fit=1200%2C9999&p=1",
       "review": "The Sony WH-1000XM4 headphones deliver exceptional sound quality and noise cancellation, perfect for audiophiles and frequent travelers.",
       "company_name": "Sony Corporation",
-      "tag": ["Wireless Headphones", "Noise Cancellation", "Sony"]
+      "tag": ["Wireless Headphones", "Noise Cancellation", "Sony"],
+      "date_added": "2024-08-2"
     },
     
     {
@@ -37,7 +39,8 @@
       "image": "https://adminapi.applegadgetsbd.com/storage/media/large/galaxy-watch4-price-in-bangladesh-1810.png",
       "review": "The Samsung Galaxy Watch 4 offers comprehensive fitness tracking features and seamless integration with your smartphone.",
       "company_name": "Samsung Electronics",
-      "tag": ["Smartwatch", "Fitness Tracker", "Samsung"]
+      "tag": ["Smartwatch", "Fitness Tracker", "Samsung"],
+      "date_added": "2024-08-3"
     },
     {
       "title": "Anker USB-C Wall Charger",
@@ -50,7 +53,8 @@
       "image": "https://ankerbd.com/wp-content/uploads/2022/04/InkedCaptggure_LI.jpg",
       "review": "The Anker USB-C Wall Charger delivers fast charging speeds and reliable performance, making it a must-have accessory for all your devices.",
       "company_name": "Anker Innovations",
-      "tag": ["Charger", "USB-C", "Anker"]
+      "tag": ["Charger", "USB-C", "Anker"],
+      "date_added": "2024-08-4"
     },
     {
       "title": "AirPods Pro",
@@ -63,7 +67,8 @@
       "image": "https://i.postimg.cc/sxkRjHzk/airpods-pro-2-usb-c-blue-background.webp",
       "review": "The AirPods Pro deliver exceptional sound quality and noise cancellation, making them a top choice for audio enthusiasts.",
       "company_name": "Apple Inc.",
-      "tag": ["Wireless Earbuds", "Noise Cancellation", "Apple"]
+      "tag": ["Wireless Earbuds", "Noise Cancellation", "Apple"],
+      "date_added": "2024-08-5"
     },
     {
       "title": "Fitbit Charge 5",
@@ -76,7 +81,8 @@
       "image": "https://cdn.mos.cms.futurecdn.net/FoA2Dk67tiErG7BGkbZPyE-1200-80.jpg",
       "review": "The Fitbit Charge 5 offers comprehensive fitness tracking features and long battery life, helping you achieve your health goals.",
       "company_name": "Fitbit Inc.",
-      "tag": ["Fitness Tracker", "Fitbit", "Health"]
+      "tag": ["Fitness Tracker", "Fitbit", "Health"],
+      "date_added": "2024-08-6"
     },
     {
       "title": "Nintendo Switch",
@@ -89,7 +95,8 @@
       "image": "https://cdn.mos.cms.futurecdn.net/P7fAM2JYVaUeMATqRKxbjL.jpg",
       "review": "The Nintendo Switch offers a unique gaming experience, allowing you to play both at home and on-the-go with its innovative design.",
       "company_name": "Nintendo Co., Ltd.",
-      "tag": ["Gaming Console", "Nintendo", "Video Games"]
+      "tag": ["Gaming Console", "Nintendo", "Video Games"],
+      "date_added": "2024-08-7"
     },
     {
       "title": "JBL Flip 5 Bluetooth Speaker",
@@ -102,7 +109,8 @@
       "image": "https://i.postimg.cc/zXcDypzP/flip-5-01-500x500.jpg",
       "review": "The JBL Flip 5 Bluetooth Speaker delivers impressive sound quality and durable design, making it perfect for outdoor adventures and indoor gatherings.",
       "company_name": "Harman International Industries",
-      "tag": ["Bluetooth Speaker", "JBL", "Portable"]
+      "tag": ["Bluetooth Speaker", "JBL", "Portable"],
+      "date_added": "2024-08-8"
     },
     {
       "title": "Samsung Galaxy Tab S7",
@@ -115,7 +123,8 @@
       "image": "https://images.samsung.com/is/image/samsung/assets/hk_en/news/samsung-galaxy-tab-s7-and-s7-plus-/720x470_1_Galaxy-tab-s7.jpg?$624_N_JPG$",
       "review": "The Samsung Galaxy Tab S7 offers stunning display quality, powerful performance, and versatile functionality, making it a top choice for both entertainment and productivity.",
       "company_name": "Samsung Electronics",
-      "tag": ["Tablet", "Samsung", "Entertainment"]
+      "tag": ["Tablet", "Samsung", "Entertainment"],
+      "date_added": "2024-08-9"
     },
     {
       "title": "Dell XPS 13",
@@ -128,7 +137,8 @@
       "image": "https://i.postimg.cc/GtSQ06FC/notebook-xps-9315-nt-blue-gallery-3.avif",
       "review": "The Dell XPS 13 is praised for its premium build, excellent performance, and beautiful display.",
       "company_name": "Dell Inc.",
-      "tag": ["Laptop", "Windows", "Ultrabook"]
+      "tag": ["Laptop", "Windows", "Ultrabook"],
+      "date_added": "2024-08-10"
     },
     {
       "title": "Apple MacBook Air M1",
@@ -141,7 +151,8 @@
       "image": "https://i.postimg.cc/5t08Jst9/macbook-air-13-3-inch-500x500.webp",
       "review": "The MacBook Air with M1 is highly regarded for its remarkable battery life, incredible speed, and fanless design.",
       "company_name": "Apple Inc.",
-      "tag": ["Laptop", "Mac", "Apple"]
+      "tag": ["Laptop", "Mac", "Apple"],
+      "date_added": "2024-08-11"
     },
     {
       "title": "Sony PlayStation 5",
@@ -154,7 +165,8 @@
       "image": "https://i.postimg.cc/289zJGg7/ps5-disc-version-13-12-23-jpg-4.jpg",
       "review": "The PlayStation 5 is celebrated for its cutting-edge graphics, innovative controller, and extensive game library.",
       "company_name": "Sony Corporation",
-      "tag": ["Gaming Console", "PlayStation", "Next-Gen"]
+      "tag": ["Gaming Console", "PlayStation", "Next-Gen"],
+      "date_added": "2024-08-12"
     },
     {
       "title": "Samsung Galaxy Buds Pro",
@@ -167,7 +179,8 @@
       "image": "https://i.postimg.cc/MZP7P2ZP/Galaxy-Buds-Pro-PR-main1.jpg",
       "review": "The Galaxy Buds Pro offer excellent sound quality, effective noise cancellation, and a sleek design.",
       "company_name": "Samsung Electronics",
-      "tag": ["Wireless Earbuds", "Samsung", "Noise Cancellation"]
+      "tag": ["Wireless Earbuds", "Samsung", "Noise Cancellation"],
+      "date_added": "2024-08-13"
     },
     {
       "title": "Google Nest Hub",
@@ -180,7 +193,8 @@
       "image": "https://i.postimg.cc/zf2KG6t2/21-9998-0481-09-Elaine-All-Colors-B-Main-92147-width-1300.jpg",
       "review": "The Google Nest Hub is perfect for managing your smart home, playing music, and providing useful information at a glance.",
       "company_name": "Google LLC",
-      "tag": ["Smart Home", "Google Assistant", "Display"]
+      "tag": ["Smart Home", "Google Assistant", "Display"],
+      "date_added": "2024-08-14"
     },
     {
       "title": "Amazon Echo Dot (4th Gen)",
@@ -193,7 +207,8 @@
       "image": "https://i.postimg.cc/rFyVfsFW/2534-88537.jpg",
       "review": "The Echo Dot (4th Gen) offers great sound quality, a sleek design, and the power of Alexa at an affordable price.",
       "company_name": "Amazon Inc.",
-      "tag": ["Smart Speaker", "Alexa", "Voice Assistant"]
+      "tag": ["Smart Speaker", "Alexa", "Voice Assistant"],
+      "date_added": "2024-08-15"
     },
     {
       "title": "Razer Blade 15",
@@ -206,7 +221,8 @@
       "image": "https://i.postimg.cc/Ls2N1cVH/DLCS1672-Edit.jpg",
       "review": "The Razer Blade 15 is lauded for its premium build quality, powerful specs, and excellent gaming performance.",
       "company_name": "Razer Inc.",
-      "tag": ["Gaming Laptop", "Windows", "High-Performance"]
+      "tag": ["Gaming Laptop", "Windows", "High-Performance"],
+      "date_added": "2024-08-16"
     },
     {
       "title": "Apple Watch Series 7",
@@ -219,7 +235,8 @@
       "image": "https://i.postimg.cc/xdBGPBvJ/Apple-Watch-Series-7-GPS-Cellular-45mm-Graphite-Stainless-Steel-with-Midnight-Sport-Band-Regular-9a6.webp",
       "review": "The Apple Watch Series 7 is the best smartwatch on the market, offering an array of health and fitness features.",
       "company_name": "Apple Inc.",
-      "tag": ["Smartwatch", "Apple", "Health"]
+      "tag": ["Smartwatch", "Apple", "Health"],
+      "date_added": "2024-08-17"
     },
     {
       "title": "DJI Mini 2",
@@ -232,7 +249,8 @@
       "image": "https://i.postimg.cc/rp2FCJdy/sj5-Wccz-Twv-NUL6-Hp-FQIinrk23-GFs62-WKJzn-Bv9-Mb.jpg",
       "review": "The DJI Mini 2 is a fantastic drone for beginners and hobbyists, offering great video quality and ease of use.",
       "company_name": "DJI",
-      "tag": ["Drone", "4K", "Aerial Photography"]
+      "tag": ["Drone", "4K", "Aerial Photography"],
+      "date_added": "2024-08-18"
     },
     {
       "title": "Microsoft Surface Pro 7",
@@ -245,7 +263,8 @@
       "image": "https://i.postimg.cc/brnqtSzS/microsoft-surface-pro-7-core-i5-laptop-4-600x500h-jpg.webp",
       "review": "The Surface Pro 7 is perfect for professionals who need a powerful and portable device for work and play.",
       "company_name": "Microsoft Corporation",
-      "tag": ["2-in-1", "Windows", "Tablet"]
+      "tag": ["2-in-1", "Windows", "Tablet"],
+      "date_added": "2024-08-19"
     },
     {
       "title": "Google Pixel 6",
@@ -258,7 +277,8 @@
       "image": "https://i.postimg.cc/MK4ywhLs/3774-67323.jpg",
       "review": "The Google Pixel 6 offers excellent camera quality and seamless integration with Google services.",
       "company_name": "Google LLC",
-      "tag": ["Smartphone", "Android", "Google"]
+      "tag": ["Smartphone", "Android", "Google"],
+      "date_added": "2024-08-20"
     },
     {
       "title": "Bose QuietComfort 45",
@@ -271,7 +291,8 @@
       "image": "https://i.postimg.cc/1tfqbBHx/Brothers-Quiet-Comfort-45-6-800x800.jpg",
       "review": "The Bose QuietComfort 45 offers a perfect balance of sound quality and noise cancellation for both work and travel.",
       "company_name": "Bose Corporation",
-      "tag": ["Wireless Headphones", "Noise Cancellation", "Bose"]
+      "tag": ["Wireless Headphones", "Noise Cancellation", "Bose"],
+      "date_added": "2024-08-21"
     },
 
     {
@@ -285,7 +306,8 @@
       "image": "https://i.postimg.cc/3NtzWKG0/t8x-QBSE3-Nx-Rygq9-WW7so-Uibsmbs4v4-Tdxi2ko-OWp.jpg",
       "review": "The GoPro HERO10 Black delivers incredible video quality and stability, making it a top choice for adventurers.",
       "company_name": "GoPro, Inc.",
-      "tag": ["Action Camera", "GoPro", "4K Video"]
+      "tag": ["Action Camera", "GoPro", "4K Video"],
+      "date_added": "2024-08-22"
     },
     {
       "title": "HP Envy 6055e",
@@ -298,7 +320,8 @@
       "image": "https://i.postimg.cc/wx2Cwkrx/c07016910-1750x1285.avif",
       "review": "The HP Envy 6055e offers easy setup, reliable printing, and seamless connectivity with smart devices.",
       "company_name": "HP Inc.",
-      "tag": ["Printer", "All-in-One", "Wireless"]
+      "tag": ["Printer", "All-in-One", "Wireless"],
+      "date_added": "2024-08-23"
     },
     {
       "title": "Samsung QN90A Neo QLED",
@@ -311,7 +334,8 @@
       "image": "https://i.postimg.cc/mgzK2Wgh/55qn90a-02-500x500.jpg",
       "review": "The Samsung QN90A Neo QLED is celebrated for its outstanding picture quality, deep blacks, and bright highlights.",
       "company_name": "Samsung Electronics",
-      "tag": ["4K TV", "QLED", "Samsung"]
+      "tag": ["4K TV", "QLED", "Samsung"],
+      "date_added": "2024-08-24"
     },
     {
       "title": "Asus ROG Strix G15",
@@ -324,7 +348,8 @@
       "image": "https://i.postimg.cc/k5WZKN8m/ROG-Strix-G15-2022-G513-800x800.jpg",
       "review": "The Asus ROG Strix G15 is a favorite among gamers for its high performance, responsive display, and RGB lighting.",
       "company_name": "Asus",
-      "tag": ["Gaming Laptop", "AMD Ryzen", "NVIDIA"]
+      "tag": ["Gaming Laptop", "AMD Ryzen", "NVIDIA"],
+      "date_added": "2024-08-25"
     },
     {
       "title": "Logitech MX Master 3",
@@ -337,7 +362,8 @@
       "image": "https://i.postimg.cc/Hx2hPpBv/4127-72278.jpg",
       "review": "The Logitech MX Master 3 is praised for its ergonomic design, smooth scroll wheel, and versatile functionality.",
       "company_name": "Logitech",
-      "tag": ["Wireless Mouse", "Ergonomic", "Logitech"]
+      "tag": ["Wireless Mouse", "Ergonomic", "Logitech"],
+      "date_added": "2024-08-26"
     },
     {
       "title": "NVIDIA GeForce RTX 3080",
@@ -350,7 +376,8 @@
       "image": "https://i.postimg.cc/ZnsD4wkr/gigabyte-geforce-rtx-3080-gaming-oc-10g-10gb-11602053545.webp",
       "review": "The NVIDIA GeForce RTX 3080 is the go-to choice for gamers seeking high-end performance and realistic graphics.",
       "company_name": "NVIDIA Corporation",
-      "tag": ["Graphics Card", "RTX", "NVIDIA"]
+      "tag": ["Graphics Card", "RTX", "NVIDIA"],
+      "date_added": "2024-08-27"
     },
     {
       "title": "Razer BlackWidow V3",
@@ -363,7 +390,8 @@
       "image": "https://i.postimg.cc/154jJ16M/blackwidow-v3-green-switch-01-500x500.jpg",
       "review": "The Razer BlackWidow V3 offers responsive keys, vibrant RGB lighting, and a durable build for gamers.",
       "company_name": "Razer Inc.",
-      "tag": ["Mechanical Keyboard", "Gaming", "Razer"]
+      "tag": ["Mechanical Keyboard", "Gaming", "Razer"],
+      "date_added": "2024-08-28"
     },
     {
       "title": "Kindle Paperwhite",
@@ -376,7 +404,8 @@
       "image": "https://i.postimg.cc/jS7kY6M7/Amazon-Kindle-Paperwhite-Signature-Edition-32-GB-5617dba0a2b34b80a9ad638c88d260ac.jpg",
       "review": "The Kindle Paperwhite is highly regarded for its sharp display, long battery life, and extensive e-book library.",
       "company_name": "Amazon.com, Inc.",
-      "tag": ["E-Reader", "Kindle", "Amazon"]
+      "tag": ["E-Reader", "Kindle", "Amazon"],
+      "date_added": "2024-08-29"
     },
     {
       "title": "Corsair K95 RGB Platinum",
@@ -389,7 +418,8 @@
       "image": "https://i.postimg.cc/Hs7trYbG/Corsair-K95-RGB-Platinum-Speed-Switch-Gaming-Keyboard.jpg",
       "review": "The Corsair K95 RGB Platinum is celebrated for its premium build quality, responsive keys, and customizable lighting.",
       "company_name": "Corsair",
-      "tag": ["Mechanical Keyboard", "Gaming", "Corsair"]
+      "tag": ["Mechanical Keyboard", "Gaming", "Corsair"],
+      "date_added": "2024-08-30"
     },
     {
       "title": "Samsung T7 Portable SSD",
@@ -402,7 +432,8 @@
       "image": "https://i.postimg.cc/qMsH8TdY/samsung-t7-1tb-usb-32-type-c-titan-gray-external-11645871829.webp",
       "review": "The Samsung T7 Portable SSD offers lightning-fast data transfer speeds and robust security features in a compact form factor.",
       "company_name": "Samsung Electronics",
-      "tag": ["Portable SSD", "External Storage", "Samsung"]
+      "tag": ["Portable SSD", "External Storage", "Samsung"],
+      "date_added": "2024-08-31"
     },
     {
       "title": "Fitbit Versa 3",
@@ -415,7 +446,8 @@
       "image": "https://i.postimg.cc/Kz4jpY5J/Fitbit-Versa-3-Smart-Watch-Midnight-8155.jpg",
       "review": "The Fitbit Versa 3 is a popular choice for fitness enthusiasts due to its comprehensive health tracking features and sleek design.",
       "company_name": "Fitbit Inc.",
-      "tag": ["Smartwatch", "Fitness Tracker", "Fitbit"]
+      "tag": ["Smartwatch", "Fitness Tracker", "Fitbit"],
+      "date_added": "2024-09-1"
     },
     {
       "title": "Roku Streaming Stick 4K",
@@ -428,7 +460,8 @@
       "image": "https://i.postimg.cc/NLv00kvz/Roku-Streaming-Stick-4-K-Streaming-Device-4-K-HDR-Dolby-Vision-45652406-6a3f-4fc9-bc1c-d5761b59d365-86.webp",
       "review": "The Roku Streaming Stick 4K offers an easy-to-use interface, a vast selection of streaming apps, and excellent video quality at an affordable price.",
       "company_name": "Roku, Inc.",
-      "tag": ["Streaming Device", "4K HDR", "Roku"]
+      "tag": ["Streaming Device", "4K HDR", "Roku"],
+      "date_added": "2024-09-2"
     },
     {
       "title": "Apple AirTag",
@@ -441,7 +474,8 @@
       "image": "https://i.postimg.cc/BZkMJYXn/2353-69818.jpg",
       "review": "The Apple AirTag is a must-have for those who frequently misplace their items, offering reliable tracking and integration with Apple's ecosystem.",
       "company_name": "Apple Inc.",
-      "tag": ["Tracking Device", "Smart Home", "Apple"]
+      "tag": ["Tracking Device", "Smart Home", "Apple"],
+      "date_added": "2024-09-3"
     },
     {
       "title": "Ring Video Doorbell 4",
@@ -454,7 +488,8 @@
       "image": "https://i.postimg.cc/RZzdHW1r/31w1v-Ns1-DUL-SY1000.jpg",
       "review": "The Ring Video Doorbell 4 offers reliable security with crisp video quality and customizable motion alerts.",
       "company_name": "Ring LLC",
-      "tag": ["Smart Doorbell", "Security", "Ring"]
+      "tag": ["Smart Doorbell", "Security", "Ring"],
+      "date_added": "2024-09-4"
     },
     {
       "title": "Oculus Quest 2",
@@ -467,7 +502,8 @@
       "image": "https://i.postimg.cc/7LHNKjQm/maxresdefault.jpg",
       "review": "The Oculus Quest 2 offers an accessible and immersive VR experience, with high-quality graphics and a wide selection of content.",
       "company_name": "Oculus VR",
-      "tag": ["VR Headset", "Virtual Reality", "Oculus"]
+      "tag": ["VR Headset", "Virtual Reality", "Oculus"],
+      "date_added": "2024-09-5"
     },
     {
       "title": "JBL Charge 5",
@@ -480,7 +516,8 @@
       "image": "https://i.postimg.cc/bvm9WL78/20210603-1622710860-753973.jpg",
       "review": "The JBL Charge 5 is celebrated for its impressive sound quality, rugged design, and ability to charge devices on the go.",
       "company_name": "JBL",
-      "tag": ["Bluetooth Speaker", "Portable", "JBL"]
+      "tag": ["Bluetooth Speaker", "Portable", "JBL"],
+      "date_added": "2024-09-6"
     },
     {
       "title": "Nest Learning Thermostat",
@@ -493,7 +530,8 @@
       "image": "https://i.postimg.cc/3NvjyhdJ/brass-google-programmable-thermostats-t3032us-64-1000.webp",
       "review": "The Google Nest Learning Thermostat is praised for its smart features, easy installation, and energy-saving capabilities.",
       "company_name": "Google LLC",
-      "tag": ["Smart Thermostat", "Energy Saving", "Google"]
+      "tag": ["Smart Thermostat", "Energy Saving", "Google"],
+      "date_added": "2024-09-7"
     },
     {
       "title": "Anker PowerCore 26800",
@@ -506,7 +544,8 @@
       "image": "https://i.postimg.cc/mZvNvP5c/anker-powercore-26800mah-power-bank-with-quick-charge-30.webp",
       "review": "The Anker PowerCore 26800 is a top choice for travelers, providing ample power and multiple charging ports for all your devices.",
       "company_name": "Anker",
-      "tag": ["Portable Charger", "Power Bank", "Anker"]
+      "tag": ["Portable Charger", "Power Bank", "Anker"],
+      "date_added": "2024-09-8"
     },
     {
       "title": "LG CX OLED TV",
@@ -519,7 +558,8 @@
       "image": "https://i.postimg.cc/MK1bqzC9/N01-D-01v.avif",
       "review": "The LG CX OLED is widely regarded as one of the best TVs on the market, offering stunning visuals and a sleek design.",
       "company_name": "LG Electronics",
-      "tag": ["OLED TV", "4K", "LG"]
+      "tag": ["OLED TV", "4K", "LG"],
+      "date_added": "2024-09-9"
     }
   ]
   
