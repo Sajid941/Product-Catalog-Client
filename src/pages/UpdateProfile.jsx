@@ -4,6 +4,7 @@ import { BiRename } from "react-icons/bi";
 import { BsPersonBoundingBox } from "react-icons/bs";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
     const { user } = useContext(AuthContext)
@@ -24,6 +25,9 @@ const UpdateProfile = () => {
     }
     return (
         <div className="bg-gray-100 py-10 my-10">
+            <Helmet>
+                <title>GadgetGalaxy | Update Profile</title>
+            </Helmet>
             <div className="max-w-lg mx-auto my-10 bg-white rounded-lg shadow-md p-5">
                 <img className="w-32 h-32 rounded-full mx-auto" src={user ? user.photoURL : "https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png"} alt="Profile picture" />
                 <h2 className="text-center text-2xl font-semibold mt-3">Hello {user && user.displayName} !</h2>

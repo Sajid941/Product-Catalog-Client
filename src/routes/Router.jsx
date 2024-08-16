@@ -45,7 +45,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <ViewDetails></ViewDetails>
                 </PrivateRoute>,
-                loader: () => fetch("/products.json")
+                loader: () => fetch('http://localhost:3000/products')
             },
 
         ])

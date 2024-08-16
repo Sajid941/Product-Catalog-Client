@@ -4,7 +4,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 const ViewDetails = () => {
     const products = useLoaderData()
     const { id } = useParams()
-    const product = products.find(product => product.id === id)
+    const product = products.find(product => product._id === id)
     const { image, company_name, review, tag, price, rating, category, stock, name } = product
 
     return (

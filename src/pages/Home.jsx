@@ -1,7 +1,6 @@
 import Banner from "../components/Banner";
 import Product from "../components/Product";
 import { Helmet } from "react-helmet";
-import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from './../hooks/useAxiosPublic';
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css'
 
 const Product = ({ product }) => {
-    const { image, title, description, price, id } = product
+    const { image, title, description, price, _id } = product
 
     return (
         <div className="card  bg-base-100 shadow-xl">
@@ -18,7 +18,7 @@ const Product = ({ product }) => {
 
 
                 <div className="card-actions justify-end">
-                    <Link to={`/viewDetails/${id}`} className="btn bg-[#2b3440] text-white">View Details</Link >
+                    <Link to={`/viewDetails/${_id}`} className="btn bg-[#2b3440] text-white">View Details</Link >
                 </div>
             </div>
         </div>
