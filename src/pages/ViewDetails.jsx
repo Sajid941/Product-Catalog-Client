@@ -5,7 +5,7 @@ const ViewDetails = () => {
     const products = useLoaderData()
     const { id } = useParams()
     const product = products.find(product => product._id === id)
-    const { image, company_name, review, tag, price, rating, category, stock, name } = product
+    const { image, company_name, review, tag, price, rating, category, stock, name, description } = product
 
     return (
         <div>
@@ -18,6 +18,7 @@ const ViewDetails = () => {
                     <h1 className="text-4xl font-bold "></h1>
                     <p className="text-xl font-medium text-[#131313CC] border-b-2 pb-5">By: {company_name} </p>
                     <p className="text-xl font-medium text-[#131313CC] border-b-2 pb-5">{name}</p>
+                    <p className=""><span className="font-bold">Description:  </span>{description} </p>
                     <p className=""><span className="font-bold">Review: </span>{review} </p>
                     <p className="border-b-2 pb-5"><span className="font-bold">Tag: {tag.map((aTag, idx) => <span className="text-[#131313B3] font-normal mr-3" key={idx}>#{aTag}</span>)} </span></p>
                     <div className="flex">

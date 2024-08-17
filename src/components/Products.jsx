@@ -16,22 +16,51 @@ const Products = () => {
 
     const [sort, setSort] = useState('')
     const [searchQuery, setSearchQuery] = useState('')
+    const [brandName, setBrandName] = useState('')
+    const [category, setCategory] = useState('')
+    const [minimumPrice, setMinimumPrice] = useState('')
+    const [maximumPrice, setMaximumPrice] = useState('')
 
     const handleSort = (e) => {
         e.preventDefault()
         const sortOption = e.target.value;
-        setSearchQuery(e.target.search.value)
         setSort(sortOption)
+    }
+
+    const handleFilter = e => {
+        e.preventDefault()
+        const fromData = e.target;
+        const brandName = fromData.brandName.value;
+        setBrandName(brandName)
+        const category = fromData.category.value;
+        setCategory(category)
+        const minimumPrice = fromData.minimumPrice.value;
+        setMinimumPrice(minimumPrice)
+        const maximumPrice = fromData.maximumPrice.value;
+        setMaximumPrice(maximumPrice)
+        console.log(brandName, category, minimumPrice, maximumPrice);
+    }
+
+    const handleClearFilter =()=>{
+        setBrandName("")
+        setCategory("")
+        setMinimumPrice("")
+        setMaximumPrice("")
+    }
+
+    const handelSearch = e => {
+        e.preventDefault()
+        setSearchQuery(e.target.value)
     }
 
     // Effect hook to fetch products whenever selectedPage changes
     useEffect(() => {
         // Fetch products based on the current page and items per page
-        axiosPublic(`/products?page=${selectedPage}&size=${itemPerPage}&sort=${sort}&query=${searchQuery}`)
+        axiosPublic(`/products?page=${selectedPage}&size=${itemPerPage}&sort=${sort}&query=${searchQuery}&brandName=${brandName}&category=${category}&minimumPrice=${minimumPrice}&maximumPrice=${maximumPrice}`)
             .then(res => {
                 setProducts(res.data)
             })
-    }, [axiosPublic, selectedPage, sort ,searchQuery])
+    }, [axiosPublic, selectedPage, sort, searchQuery, brandName, category, minimumPrice, maximumPrice])
 
 
 
@@ -48,9 +77,9 @@ const Products = () => {
             </div>
 
             {/* Search and Sort Section */}
-            <section className="my-10">
-                <form onSubmit={handleSort} className="max-w-lg mx-auto">
-                    <div className="flex">
+            <section className="my-10 max-w-lg mx-auto flex gap-4">
+                <div className="flex">
+                    <form onSubmit={handleSort} className="">
                         <div>
                             {/* Dropdown for sorting products */}
                             <select name="info" id="info" onChange={handleSort} className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"  >
@@ -60,29 +89,67 @@ const Products = () => {
                                 <option value="newest">Newest</option>
                             </select>
                         </div>
+                    </form>
+                    <form onSubmit={handelSearch} className="w-full">
                         <div className="relative w-full">
                             {/* Search bar for searching products */}
                             <input
                                 name="search"
                                 type="search"
                                 id="search-dropdown"
+                                onChange={handelSearch}
                                 className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Search Product"
 
                             />
-                            {/* Search button */}
-                            <button
-                                type="submit"
-                                className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-[#f9732c] rounded-e-lg border border-[#f9732c] hover:bg-[#f75c18] focus:ring-4 focus:outline-none focus:ring-blue-300"
-                            >
-                                <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                </svg>
-                                <span className="sr-only">Search</span>
-                            </button>
+                        </div>
+                    </form>
+                </div>
+                {/* Open the modal using document.getElementById('ID').showModal() method */}
+                <div className="relative">
+                    <button className="btn" onClick={() => document.getElementById('my_modal_1').showModal()}>Filter</button>
+                    <span onClick={handleClearFilter} className="badge absolute left-7 -top-3 bg-red-500 text-white border-0 hover:cursor-pointer">Clear</span>
+                </div>
+                <dialog id="my_modal_1" className="modal">
+                    <div className="modal-box">
+                        <h3 className="font-bold text-lg text-center">Filter by Brand and Category</h3>
+                        <form onSubmit={handleFilter} className="flex flex-col items-center gap-5 my-10">
+                            <select name="brandName" className="select select-bordered w-full max-w-xs">
+                                <option selected value="">All Brand</option>
+                                <option value="Apple Inc.">Apple Inc.</option>
+                                <option value="Samsung Electronics">Samsung Electronics</option>
+                            </select>
+                            <select name="category" className="select select-bordered w-full max-w-xs">
+                                <option selected value="">All Category</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="Other Electronics">Other Electronics</option>
+                            </select>
+                            <h3 className="font-bold text-lg text-center">Filter by Price Range</h3>
+
+                            <div className="flex gap-4">
+                                <label className="form-control w-full max-w-xs">
+                                    <div className="label">
+                                        <span className="label-text">Minimum</span>
+                                    </div>
+                                    <input name="minimumPrice" type="number" min={0} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <label className="form-control w-full max-w-xs">
+                                    <div className="label">
+                                        <span className="label-text">Maximum</span>
+                                    </div>
+                                    <input name="maximumPrice" type="number" min={1} placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                                </label>
+                            </div>
+                            <input className="btn w-full bg-[#f9732c]" type="submit" value="Filter" />
+                        </form>
+                        <div className="modal-action">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn">Close</button>
+                            </form>
                         </div>
                     </div>
-                </form>
+                </dialog>
             </section>
 
             {/* Products Grid */}

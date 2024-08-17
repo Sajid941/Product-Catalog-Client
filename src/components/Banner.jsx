@@ -2,7 +2,7 @@ import 'animate.css';
 
 const Banner = () => {
     return (
-        <div className="carousel w-full my-10 rounded-xl">
+        <div className="carousel w-full my-10 rounded-xl hidden">
             <div id="slide1" className="carousel-item relative w-full">
                 <div className="grid grid-cols-2 p-2 md:p-20 justify-center items-center">
                     <div className="col-span-1 space-y-2">
