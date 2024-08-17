@@ -18,7 +18,7 @@ const Product = ({ product }) => {
 
 
                 <div className="card-actions justify-end">
-                    <Link to={`/viewDetails/${_id}`} className="btn-xs md:btn bg-[#2b3440] text-white">View Details</Link >
+                    <Link to={`/viewDetails/${_id}`} className="btn bg-[#2b3440] text-white">View Details</Link >
                 </div>
             </div>
         </div>
