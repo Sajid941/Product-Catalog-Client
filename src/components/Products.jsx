@@ -14,22 +14,24 @@ const Products = () => {
     // State to store the list of products retrieved from the API
     const [products, setProducts] = useState([])
 
-    const [sort, setSort] = useState(null)
+    const [sort, setSort] = useState('')
+    const [searchQuery, setSearchQuery] = useState('')
 
     const handleSort = (e) => {
         e.preventDefault()
         const sortOption = e.target.value;
+        setSearchQuery(e.target.search.value)
         setSort(sortOption)
     }
 
     // Effect hook to fetch products whenever selectedPage changes
     useEffect(() => {
         // Fetch products based on the current page and items per page
-        axiosPublic(`/products?page=${selectedPage}&size=${itemPerPage}&sort=${sort}`)
+        axiosPublic(`/products?page=${selectedPage}&size=${itemPerPage}&sort=${sort}&query=${searchQuery}`)
             .then(res => {
                 setProducts(res.data)
             })
-    }, [axiosPublic, selectedPage,sort])
+    }, [axiosPublic, selectedPage, sort ,searchQuery])
 
 
 
@@ -51,7 +53,7 @@ const Products = () => {
                     <div className="flex">
                         <div>
                             {/* Dropdown for sorting products */}
-                            <select name="info"  id="info" onChange={handleSort} className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"  >
+                            <select name="info" id="info" onChange={handleSort} className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"  >
                                 <option value="auto" >Sort</option>
                                 <option value="low-high">Low - High</option>
                                 <option value="high-low">High - Low</option>
@@ -66,7 +68,7 @@ const Products = () => {
                                 id="search-dropdown"
                                 className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Search Product"
-                                required
+
                             />
                             {/* Search button */}
                             <button
