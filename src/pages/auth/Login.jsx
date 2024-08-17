@@ -1,12 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaEye, FaEyeSlash, FaFacebook, FaGoogle } from "react-icons/fa";
+import { FaEye, FaEyeSlash,  FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false)
-    const { logIn, logInWithGoogle, logInWithFacebook } = useContext(AuthContext)
+    const { logIn, logInWithGoogle } = useContext(AuthContext)
     const location = useLocation()
     const navigate = useNavigate()
     console.log(location)
@@ -40,20 +40,20 @@ const Login = () => {
             })
 
     }
-    const handleFacebookLogIn = () => {
-        logInWithFacebook()
-            .then(result => {
-                console.log(result.user)
-                toast("Login Successfully")
+    // const handleFacebookLogIn = () => {
+    //     logInWithFacebook()
+    //         .then(result => {
+    //             console.log(result.user)
+    //             toast("Login Successfully")
 
-            })
-            .catch(error => {
-                console.log(error)
-                toast.error(error.message)
+    //         })
+    //         .catch(error => {
+    //             console.log(error)
+    //             toast.error(error.message)
 
-            })
+    //         })
 
-    }
+    // }
     return (
         <div className="min-h-screen my-10 px-4 md:px-0 rounded-xl flex flex-col items-center justify-center bg-gray-100">
             <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
@@ -62,10 +62,10 @@ const Login = () => {
                     <span className="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-green-500"><FaGoogle size={20}></FaGoogle></span>
                     <span>Login with Google</span>
                 </button>
-                <button onClick={handleFacebookLogIn} className="relative mt-6 border rounded-md py-2 text-sm text-gray-800 bg-gray-100 hover:bg-gray-200">
+                {/* <button onClick={handleFacebookLogIn} className="relative mt-6 border rounded-md py-2 text-sm text-gray-800 bg-gray-100 hover:bg-gray-200">
                     <span className="absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500"><FaFacebook size={20}></FaFacebook></span>
                     <span>Login with Facebook</span>
-                </button>
+                </button> */}
                 <div className="relative mt-10 h-px bg-gray-300">
                     <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
                         <span className="bg-white px-4 text-xs text-gray-500 uppercase">Or Login With Email</span>
