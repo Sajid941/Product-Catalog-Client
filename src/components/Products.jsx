@@ -41,7 +41,7 @@ const Products = () => {
         console.log(brandName, category, minimumPrice, maximumPrice);
     }
 
-    const handleClearFilter =()=>{
+    const handleClearFilter = () => {
         setBrandName("")
         setCategory("")
         setMinimumPrice("")
@@ -68,6 +68,7 @@ const Products = () => {
     const itemPerPage = 8;
     const numOfPages = Math.ceil(count / itemPerPage)
     const totalPages = [...Array(numOfPages).keys()].map(i => i + 1)
+
 
     return (
         <div>
@@ -116,13 +117,54 @@ const Products = () => {
                         <form onSubmit={handleFilter} className="flex flex-col items-center gap-5 my-10">
                             <select name="brandName" className="select select-bordered w-full max-w-xs">
                                 <option selected value="">All Brand</option>
-                                <option value="Apple Inc.">Apple Inc.</option>
-                                <option value="Samsung Electronics">Samsung Electronics</option>
+                                <option value="apple">Apple Inc.</option>
+                                <option value="sony">Sony Corporation</option>
+                                <option value="samsung">Samsung Electronics</option>
+                                <option value="anker">Anker Innovations</option>
+                                <option value="fitbit">Fitbit Inc.</option>
+                                <option value="nintendo">Nintendo Co., Ltd.</option>
+                                <option value="harman">Harman International Industries</option>
+                                <option value="dell">Dell Inc.</option>
+                                <option value="google">Google LLC</option>
+                                <option value="amazon">Amazon Inc.</option>
+                                <option value="razer">Razer Inc.</option>
+                                <option value="dji">DJI</option>
+                                <option value="microsoft">Microsoft Corporation</option>
+                                <option value="bose">Bose Corporation</option>
+                                <option value="gopro">GoPro, Inc.</option>
+                                <option value="hp">HP Inc.</option>
+                                <option value="asus">Asus</option>
+                                <option value="logitech">Logitech</option>
+                                <option value="nvidia">NVIDIA Corporation</option>
+                                <option value="corsair">Corsair</option>
+                                <option value="roku">Roku, Inc.</option>
+                                <option value="ring">Ring LLC</option>
+                                <option value="oculus">Oculus VR</option>
+                                <option value="jbl">JBL</option>
+                                <option value="lg">LG Electronics</option>
+
                             </select>
                             <select name="category" className="select select-bordered w-full max-w-xs">
                                 <option selected value="">All Category</option>
-                                <option value="laptop">Laptop</option>
-                                <option value="Other Electronics">Other Electronics</option>
+                                <option value="mobile phones">Mobile Phones</option>
+                                <option value="audio devices">Audio Devices</option>
+                                <option value="wearable technology">Wearable Technology</option>
+                                <option value="chargers cables">Chargers and Cables</option>
+                                <option value="other electronics">Other Electronics</option>
+                                <option value="laptops">Laptops</option>
+                                <option value="gaming consoles">Gaming Consoles</option>
+                                <option value="smart home devices">Smart Home Devices</option>
+                                <option value="drones">Drones</option>
+                                <option value="tablets">Tablets</option>
+                                <option value="cameras">Cameras</option>
+                                <option value="printers">Printers</option>
+                                <option value="televisions">Televisions</option>
+                                <option value="computer accessories">Computer Accessories</option>
+                                <option value="computer components">Computer Components</option>
+                                <option value="e readers">E Readers</option>
+                                <option value="external storage">External Storage</option>
+                                <option value="streaming devices">Streaming Devices</option>
+                                <option value="virtual reality">Virtual Reality</option>
                             </select>
                             <h3 className="font-bold text-lg text-center">Filter by Price Range</h3>
 
