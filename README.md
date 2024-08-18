@@ -28,7 +28,7 @@ This project is a fully responsive e-commerce web application designed to provid
 - Express JS
 - MongoDB
 
-## Installation
+# Installation
 
 ### Step 1:
 ```bash
@@ -41,45 +41,72 @@ git clone https://github.com/Sajid941/Product-Catalog-Client.git # Or download f
 # Install dependencies
 npm install
 ```
+### Step 3: Setup environment keys
+```bash
+# .env Example
+# Firebase secret -
+  VITE_APIKEY= AIfadyAe-adfadfadfdfaereJT_myJtUCeF2nGcGM
+  VITE_AUTHDOMAIN= project-name-34343.firebaseapp.com
+  VITE_PROJECTID= project-name-34343
+  VITE_STORAGEBUCKET= project-name-34343.appspot.com
+  VITE_MESSAGINGSENDERID= 4524524524
+  VITE_APPID= 1:4524524524:web:dsfhasdfhadslfjadh
+```
 
-### Step 2:
+### Step 4:
 ```bash
 #  Run the client
 npm run dev
 ```
 
-## Contributing
+# Contributing
 
-### Step 1:
+
+### Step 1: Fork the Repository
+- Click on the "Fork" button at the top right of the repository page on GitHub to create a copy of the repository under your own GitHub account.
+
+### Step 2: Clone Your Forked Repository
 ```bash
-# Clone the repo
-git clone https://github.com/Sajid941/Product-Catalog-Client.git # Or download from github
+# Clone the forked repo to your local machine
+git clone https://github.com/YourUsername/Product-Catalog-Client.git
 ```
+### Step 3:
+```bash
+# Install dependencies
+npm install
+```
+### Step 4: Obtaining Environment Keys
+### Contact Me
+- Please send a message to [sajidislam941@gmail.com/+880 1307-599584] requesting the environment keys.
+- Include your GitHub username or other relevant details to help me verify your contribution.
+### Receive and Configure
+- I will provide the required environment keys securely.
+- Add these keys to your .env file and ensure they are kept private.
 
-### Step 2:
+### Step 5:
 ```bash
 # Create a new branch
 git checkout -b feature-branch-name
 ```
 
-### Step 2:
+### Step 6:
 #### Make your changes
 
 
-### Step 3:
+### Step 7:
 ```bash
 # Commit your changes
 git commit -m "Description of changes"
 
 ```
 
-### Step 4:
+### Step 8:
 ```bash
 # Push to your branch
 git push origin feature-branch-name
 
 ```
-### Step 5 (Optional) : 
+### Step 9 (Optional) : 
 
 ### If you'd like to contribute to the back-end, please visit the [Product Catalog Server](https://github.com/Sajid941/Product-Catalog-Server) repository and follow the server-side contribution guidelines.
 
