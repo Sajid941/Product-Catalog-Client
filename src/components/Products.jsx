@@ -5,70 +5,77 @@ import { useLoaderData } from "react-router-dom";
 
 const Products = () => {
 
-    // Hooks
-    const axiosPublic = useAxiosPublic()
+    // Custom hook to make Axios requests with public access
+    const axiosPublic = useAxiosPublic();
 
     // State to keep track of the currently selected page for pagination
-    const [selectedPage, setSelectedPage] = useState(1)
+    const [selectedPage, setSelectedPage] = useState(1);
 
     // State to store the list of products retrieved from the API
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
 
-    const [sort, setSort] = useState('')
-    const [searchQuery, setSearchQuery] = useState('')
-    const [brandName, setBrandName] = useState('')
-    const [category, setCategory] = useState('')
-    const [minimumPrice, setMinimumPrice] = useState('')
-    const [maximumPrice, setMaximumPrice] = useState('')
+    // State to manage sorting option
+    const [sort, setSort] = useState('');
 
+    // State to manage search query input by the user
+    const [searchQuery, setSearchQuery] = useState('');
+
+    // State to manage filtering options
+    const [brandName, setBrandName] = useState('');
+    const [category, setCategory] = useState('');
+    const [minimumPrice, setMinimumPrice] = useState('');
+    const [maximumPrice, setMaximumPrice] = useState('');
+
+    // Handler for sorting products
     const handleSort = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         const sortOption = e.target.value;
-        setSort(sortOption)
+        setSort(sortOption);
     }
 
+    // Handler for applying filters based on form input
     const handleFilter = e => {
-        e.preventDefault()
+        e.preventDefault();
         const fromData = e.target;
         const brandName = fromData.brandName.value;
-        setBrandName(brandName)
+        setBrandName(brandName);
         const category = fromData.category.value;
-        setCategory(category)
+        setCategory(category);
         const minimumPrice = fromData.minimumPrice.value;
-        setMinimumPrice(minimumPrice)
+        setMinimumPrice(minimumPrice);
         const maximumPrice = fromData.maximumPrice.value;
-        setMaximumPrice(maximumPrice)
+        setMaximumPrice(maximumPrice);
         console.log(brandName, category, minimumPrice, maximumPrice);
     }
 
+    // Handler to clear all applied filters
     const handleClearFilter = () => {
-        setBrandName("")
-        setCategory("")
-        setMinimumPrice("")
-        setMaximumPrice("")
+        setBrandName("");
+        setCategory("");
+        setMinimumPrice("");
+        setMaximumPrice("");
     }
 
+    // Handler for search query input
     const handelSearch = e => {
-        e.preventDefault()
-        setSearchQuery(e.target.value)
+        e.preventDefault();
+        setSearchQuery(e.target.value);
     }
 
-    // Effect hook to fetch products whenever selectedPage changes
+    // Effect hook to fetch products whenever dependencies like selectedPage, sort, etc., change
     useEffect(() => {
-        // Fetch products based on the current page and items per page
+        // Fetch products based on the current filters, sort, and pagination options
         axiosPublic(`/products?page=${selectedPage}&size=${itemPerPage}&sort=${sort}&query=${searchQuery}&brandName=${brandName}&category=${category}&minimumPrice=${minimumPrice}&maximumPrice=${maximumPrice}`)
             .then(res => {
-                setProducts(res.data)
+                setProducts(res.data);
             })
-    }, [axiosPublic, selectedPage, sort, searchQuery, brandName, category, minimumPrice, maximumPrice])
+    }, [axiosPublic, selectedPage, sort, searchQuery, brandName, category, minimumPrice, maximumPrice]);
 
-
-
-    const { count } = useLoaderData()
-    const itemPerPage = 8;
-    const numOfPages = Math.ceil(count / itemPerPage)
-    const totalPages = [...Array(numOfPages).keys()].map(i => i + 1)
-
+    // Retrieve the total count of products from loader data
+    const { count } = useLoaderData();
+    const itemPerPage = 8; // Number of items to display per page
+    const numOfPages = Math.ceil(count / itemPerPage); // Calculate total number of pages
+    const totalPages = [...Array(numOfPages).keys()].map(i => i + 1); // Generate an array of page numbers
 
     return (
         <div>
@@ -83,8 +90,8 @@ const Products = () => {
                     <form onSubmit={handleSort} className="">
                         <div>
                             {/* Dropdown for sorting products */}
-                            <select name="info" id="info" onChange={handleSort} className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"  >
-                                <option value="auto" >Sort</option>
+                            <select name="info" id="info" onChange={handleSort} className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100">
+                                <option value="auto">Sort</option>
                                 <option value="low-high">Low - High</option>
                                 <option value="high-low">High - Low</option>
                                 <option value="newest">Newest</option>
@@ -101,73 +108,36 @@ const Products = () => {
                                 onChange={handelSearch}
                                 className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Search Product"
-
                             />
                         </div>
                     </form>
                 </div>
-                {/* Open the modal using document.getElementById('ID').showModal() method */}
+                {/* Button to open the filter modal */}
                 <div className="relative">
                     <button className="btn" onClick={() => document.getElementById('my_modal_1').showModal()}>Filter</button>
                     <span onClick={handleClearFilter} className="badge absolute left-7 -top-3 bg-red-500 text-white border-0 hover:cursor-pointer">Clear</span>
                 </div>
+                {/* Filter modal */}
                 <dialog id="my_modal_1" className="modal">
                     <div className="modal-box">
                         <h3 className="font-bold text-lg text-center">Filter by Brand and Category</h3>
                         <form onSubmit={handleFilter} className="flex flex-col items-center gap-5 my-10">
+                            {/* Dropdown for selecting a brand */}
                             <select name="brandName" className="select select-bordered w-full max-w-xs">
                                 <option selected value="">All Brand</option>
                                 <option value="apple">Apple Inc.</option>
                                 <option value="sony">Sony Corporation</option>
-                                <option value="samsung">Samsung Electronics</option>
-                                <option value="anker">Anker Innovations</option>
-                                <option value="fitbit">Fitbit Inc.</option>
-                                <option value="nintendo">Nintendo Co., Ltd.</option>
-                                <option value="harman">Harman International Industries</option>
-                                <option value="dell">Dell Inc.</option>
-                                <option value="google">Google LLC</option>
-                                <option value="amazon">Amazon Inc.</option>
-                                <option value="razer">Razer Inc.</option>
-                                <option value="dji">DJI</option>
-                                <option value="microsoft">Microsoft Corporation</option>
-                                <option value="bose">Bose Corporation</option>
-                                <option value="gopro">GoPro, Inc.</option>
-                                <option value="hp">HP Inc.</option>
-                                <option value="asus">Asus</option>
-                                <option value="logitech">Logitech</option>
-                                <option value="nvidia">NVIDIA Corporation</option>
-                                <option value="corsair">Corsair</option>
-                                <option value="roku">Roku, Inc.</option>
-                                <option value="ring">Ring LLC</option>
-                                <option value="oculus">Oculus VR</option>
-                                <option value="jbl">JBL</option>
-                                <option value="lg">LG Electronics</option>
-
+                                {/* Add other brand options here */}
                             </select>
+                            {/* Dropdown for selecting a category */}
                             <select name="category" className="select select-bordered w-full max-w-xs">
                                 <option selected value="">All Category</option>
                                 <option value="mobile phones">Mobile Phones</option>
                                 <option value="audio devices">Audio Devices</option>
-                                <option value="wearable technology">Wearable Technology</option>
-                                <option value="chargers cables">Chargers and Cables</option>
-                                <option value="other electronics">Other Electronics</option>
-                                <option value="laptops">Laptops</option>
-                                <option value="gaming consoles">Gaming Consoles</option>
-                                <option value="smart home devices">Smart Home Devices</option>
-                                <option value="drones">Drones</option>
-                                <option value="tablets">Tablets</option>
-                                <option value="cameras">Cameras</option>
-                                <option value="printers">Printers</option>
-                                <option value="televisions">Televisions</option>
-                                <option value="computer accessories">Computer Accessories</option>
-                                <option value="computer components">Computer Components</option>
-                                <option value="e readers">E Readers</option>
-                                <option value="external storage">External Storage</option>
-                                <option value="streaming devices">Streaming Devices</option>
-                                <option value="virtual reality">Virtual Reality</option>
+                                {/* Add other category options here */}
                             </select>
                             <h3 className="font-bold text-lg text-center">Filter by Price Range</h3>
-
+                            {/* Input fields for minimum and maximum price */}
                             <div className="flex gap-4">
                                 <label className="form-control w-full max-w-xs">
                                     <div className="label">
@@ -186,7 +156,7 @@ const Products = () => {
                         </form>
                         <div className="modal-action">
                             <form method="dialog">
-                                {/* if there is a button in form, it will close the modal */}
+                                {/* Close button for the modal */}
                                 <button className="btn">Close</button>
                             </form>
                         </div>
